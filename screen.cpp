@@ -65,3 +65,12 @@ void Screen::toDraw(){
         cout << endl;
     }
 }
+
+
+ostream& operator<<(ostream &os, Screen &t){
+    for(int i; i < t.nlin; i++){
+        for(int j ; j < t.ncol; j++){
+           os << mat[i][j];
+        }
+    }
+}
