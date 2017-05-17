@@ -42,7 +42,7 @@ void Screen::toDraw(){
     cout << "  ";
     for(int i=0; i <= ncol ;i++){
         if(i<=9){
-            cout << "0" << i << " ";
+            cout << " " << i << " ";
         }
         else{
             cout << i << " ";
@@ -54,7 +54,7 @@ void Screen::toDraw(){
         for (int j=0; j <= ncol ; j++){
 
             if(j==0 && i >= 0 && i <= 9){
-                cout << "0" << i << " ";
+                cout << " " << i << " ";
             }
             else if(j==0 && i>=0){
                 cout << i <<" ";
