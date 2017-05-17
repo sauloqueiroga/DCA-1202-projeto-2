@@ -40,8 +40,8 @@ void Screen::setPixel(int x, int y){
 
 void Screen::toDraw(){
     cout << "  ";
-    for(int i=0; i <= ncol ;i++){
-        if(i<=9){
+    for(int i = 0; i <= ncol ;i++){
+        if(i <= 9){
             cout << "0" << i << " ";
         }
         else{
@@ -50,13 +50,13 @@ void Screen::toDraw(){
     }
     cout << endl;
 
-    for (int i=0; i <= nlin ; i++){
-        for (int j=0; j <= ncol ; j++){
+    for (int i = 0; i <= nlin ; i++){
+        for (int j = 0; j <= ncol ; j++){
 
-            if(j==0 && i >= 0 && i <= 9){
+            if(j == 0 && i >= 0 && i <= 9){
                 cout << "0" << i << " ";
             }
-            else if(j==0 && i>=0){
+            else if(j == 0 && i >= 0){
                 cout << i <<" ";
             }
              cout << mat[j][i] << "  ";
