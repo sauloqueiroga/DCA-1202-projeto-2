@@ -10,7 +10,7 @@ Circulo::Circulo(int mx, int my, int raio, int mode){
     x = mx;
     y = my;                                                          // x e y sao o centro do circulo
     r = raio;
-    modo = mode;                                                    // modo: cheio ou vazio
+    modo = mode;                                                     // modo: cheio ou vazio
 }
 
 void Circulo::informacoes(){
@@ -23,8 +23,7 @@ void Circulo::draw(Screen &t){
     for(int i = (x - r); i <= (x + r); i++){
         for(int j = (y - r); j <= (y + r); j++){
 
-            float aux = (pow( (i-x), 2) + pow( (j-y), 2));
-            aux = (pow( aux, 0.5));
+            double aux = sqrt( (pow( (i-x), 2) + pow( (j-y), 2) ) );
             if(modo == 0){
                 if( (int)aux == r){
                     t.setPixel( i, j);
