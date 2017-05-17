@@ -15,7 +15,7 @@ private:
     vector < vector<char> > mat;                                            // armazena a matriz da tela
 
 public:
-    Screen(int nl, int nc);                                                 // construtor da classe
+    Screen(int l, int c);                                                 // construtor da classe
 
     void setPixel(int x, int y);                                            // desenha um pixel da matriz usando o
                                                                             // caractere guardado em 'brush'

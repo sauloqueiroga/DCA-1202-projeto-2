@@ -4,9 +4,9 @@
 #include "Reta.h"
 
 
-Retangulo::Retangulo(int rx, int ry, int l, int a){
-    posicaoX = rx;
-    posicaoY = ry;
+Retangulo::Retangulo(int x, int y, int l, int a){
+    posicaoX = x;
+    posicaoY = y;
     largura = l;
     altura = a;
 }

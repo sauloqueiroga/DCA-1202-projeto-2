@@ -11,7 +11,7 @@ int main(){
     Screen d(18,18);
     Reta r(0,0,18,18);
     Retangulo re(2,2,15,15);
-    Circulo c(10,10,7,1);
+    Circulo c(10,10,7,0);
 
     r.informacoes();
     d.setBrush('X');

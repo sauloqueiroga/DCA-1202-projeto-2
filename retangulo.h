@@ -9,7 +9,7 @@ private:
   int posicaoX, posicaoY, largura, altura;
 
 public:
-    Retangulo(int rx, int ry, int l, int a);
+    Retangulo(int x, int y, int l, int a);
     void informacoes();
     void draw(Screen &t);
 };
