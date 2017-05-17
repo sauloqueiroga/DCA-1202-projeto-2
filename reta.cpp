@@ -5,8 +5,6 @@
 
 using namespace std;
 
-//Point p1, p2;
-
 Reta::Reta(int px1, int py1, int px2, int py2){
     x1 = px1;                                               //coloca os pontos final e inicial
     y1 = py1;
